@@ -73,7 +73,7 @@ tag_map:
 
 deploy:
   type: git
-  repo: git@github.com:GY00156/luqianwei.github.io.git # 比如：https://github.com/YunYouJun/yunyoujun.github.io
+  repo: https://github.com/GY00156/luqianwei.github.io.git # 比如：https://github.com/YunYouJun/yunyoujun.github.io
   branch: master # 默认使用 master 分支
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
 
