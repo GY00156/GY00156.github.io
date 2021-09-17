@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../二维码生成/QR-Code"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
