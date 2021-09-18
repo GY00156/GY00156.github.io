@@ -1,12 +1,8 @@
 language: node_js
 # nodejs版本
-node_js: 
-    - '6'
+node_js: stable
  
-# Travis-CI Caching
-cache:
-  directories:
-    - node_modules
+
  
  
 # S: Build Lifecycle
@@ -15,12 +11,13 @@ install:
  
 before_script:
  
-# 无其他依赖项所以执行npm run build 构建就行了
+
 script:
-  - npm run build
+  - hexo clean
+  - hexo g
  
 after_script:
-  - cd ./dist
+  - cd ./public
   - git init
   - git config user.name "GY00156"
   - git config user.email "13253134481@163.com"
