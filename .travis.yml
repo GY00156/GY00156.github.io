@@ -2,8 +2,19 @@ language: node_js
 # nodejs版本
 node_js: stable
  
+notifications:
+    email:
+        recipients:
+            - 13253134481@163.com #你的邮箱地址
+        on_success: change
+        on_failure: always
 
- 
+git:
+  submodules: false
+        
+before_install:
+    - export TZ='Asia/Shanghai'
+    - npm install hexo-cli -g
  
 # S: Build Lifecycle
 install:
@@ -17,7 +28,7 @@ script:
   - hexo g
  
 after_script:
-  - cd public
+  - cd ./public
   - git init
   - git config user.name "GY00156"
   - git config user.email "13253134481@163.COM"
