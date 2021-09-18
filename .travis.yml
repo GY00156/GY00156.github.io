@@ -31,7 +31,7 @@ after_script:
   - cd ./public
   - git init
   - git config user.name "GY00156"
-  - git config user.email "13253134481@163.COM"
+  - git config user.email "13253134481@163.com"
   - git add .
   - git commit -m "Update tools"
   - git push --force --quiet "https://${GITHUB_TOKEN}@${gh_ref}" master:master
