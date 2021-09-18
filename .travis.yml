@@ -36,6 +36,6 @@ deploy:
     branch: hexo # 工作分支
 
 
-# cache:
-#   directories:
-#     - node_modules
+cache:
+  directories:
+    - node_modules
