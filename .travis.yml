@@ -34,7 +34,7 @@ after_script:
   - git config user.email "13253134481@163.com"
   - git add .
   - git commit -m "Update tools"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${gh_ref}" master:master
+  - git push --force --quiet "https://${gh_token}@${gh_ref}" master:master
 # E: Build LifeCycle
 
 #指定分支，只有指定的分支提交时才会运行脚本
