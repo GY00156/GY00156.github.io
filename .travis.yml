@@ -30,8 +30,8 @@ deploy:
   provider: pages
   skip_cleanup: true # 跳过清理
   local_dir: public # 需要推送到 GitHub 的静态文件目录 
-  name: GY00156 # 用户名变量
-  email: 13253134481@163.com # 用户邮箱变量
+  name: $GIT_NAME # 用户名变量
+  email: $GIT_EMAIL # 用户邮箱变量
   github_token: $GITHUB_TOKEN # GitHub Token 
   verbose: true
   keep-history: true # 保持推送记录，以增量提交的方式
