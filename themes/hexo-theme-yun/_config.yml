@@ -299,7 +299,7 @@ vendors:
 # UI
 banner:
   enable: true
-  title: 小站
+  title: 小站时光
   src: /js/ui/banner.js
   border: true
   cloud:
