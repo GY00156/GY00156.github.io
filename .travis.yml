@@ -15,7 +15,8 @@ before_install:
   - npm install hexo-cli # 安装 hexo
 #  - sudo apt-get install libpng16-dev # 安装 libpng16-dev CI 编译出现相关报错时请取消注释
 
-
+env:
+  - GITHUB_TOKEN=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
 
 install:
   - npm install # 安装依赖
@@ -24,8 +25,7 @@ script: # 执行脚本，清除缓存，生成静态文件
   - hexo clean
   - hexo generate
 
-GITHUB_TOKEN: 
-  po: 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
+
 
 deploy:
   
@@ -34,7 +34,7 @@ deploy:
   local_dir: public # 需要推送到 GitHub 的静态文件目录 
   name: GY00156 # 用户名变量
   email: 13253134481@163.com # 用户邮箱变量
-  github_token: ${GITHUB_TOKEN.po} # GitHub Token 
+  github_token: $GITHUB_TOKEN # GitHub Token 
   verbose: true
   keep-history: true # 保持推送记录，以增量提交的方式
   target-branch: master # 推送的目标分支 local_dir->>master 分支
