@@ -25,7 +25,7 @@ script: # 执行脚本，清除缓存，生成静态文件
   - hexo generate
 
 deploy:
-  expoer GITHUB_TOKEN=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
+  expoer GITHUB_TOKEN='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'
   provider: pages
   skip_cleanup: true # 跳过清理
   local_dir: public # 需要推送到 GitHub 的静态文件目录 
