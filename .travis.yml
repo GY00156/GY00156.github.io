@@ -17,7 +17,7 @@ script:
   - hexo g
  
 after_script:
-  - cd ./public
+  - cd public
   - git init
   - git config user.name "GY00156"
   - git config user.email "13253134481@163.com"
