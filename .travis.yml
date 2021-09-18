@@ -16,6 +16,7 @@ before_install:
 #  - sudo apt-get install libpng16-dev # 安装 libpng16-dev CI 编译出现相关报错时请取消注释
 
 env:
+  global:
   - GITHUB_TOKEN: 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
 
 install:
