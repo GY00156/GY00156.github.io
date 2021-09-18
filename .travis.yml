@@ -23,9 +23,9 @@ after_script:
   - git config user.email "13253134481@163.com"
   - git add .
   - git commit -m "Update tools"
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" hexo:master
+  - git push --force --quiet "${GITHUB_TOKEN}git@${GH_REF}" master:master
 # E: Build LifeCycle
- 
+
 #指定分支，只有指定的分支提交时才会运行脚本
 branches:
   only:
@@ -33,4 +33,4 @@ branches:
 env:
  global:
    # 我将其添加到了travis-ci的环境变量中
-   - GH_REF: github.com/GY00156/gy00156.github.io.git
+   - GH_REF: github.com:GY00156/gy00156.github.io.git
